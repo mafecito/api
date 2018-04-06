@@ -520,8 +520,6 @@ class Router
                 throw $exception;
             }
 
-            $this->exception->report($exception);
-
             $response = $this->exception->handle($exception);
         }
 
